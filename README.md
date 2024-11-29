@@ -32,7 +32,7 @@ cp .env.example .env
 ```
 ### Поднять контейнеры
 ```shell
-docker-compose up
+docker-compose up -d
 ```
 ### Зайти в контейнер
 ```shell
