@@ -24,7 +24,7 @@
 
 ```shell
 # Склонировать проект
-git clone ...
+git clone https://github.com/igoninkirill/todo_b.git
 # Настроить под себя .env
 cp .env.example .env
 # Поднять контейнеры
