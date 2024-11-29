@@ -22,18 +22,28 @@
 
 # Установка проекта
 
+### Склонировать проект
 ```shell
-# Склонировать проект
 git clone https://github.com/igoninkirill/todo_b.git
-# Настроить под себя .env
-cp .env.example .env
-# Поднять контейнеры
-docker-compose up
-# Зайти в контейнер
-docker compose exec app bash
-# Установить зависимости
-composer install
-# Запустить миграции
-php migrate.php
-
 ```
+### Настроить под себя .env
+```shell
+cp .env.example .env
+```
+### Поднять контейнеры
+```shell
+docker-compose up
+```
+### Зайти в контейнер
+```shell
+docker compose exec app bash
+```
+### Установить зависимости
+```shell
+composer install
+```
+### Запустить миграции
+```shell
+php migrate.php
+```
+
