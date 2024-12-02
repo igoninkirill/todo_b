@@ -4,7 +4,7 @@ namespace App\Models;
 
 use PDO;
 
-class Model
+abstract class Model
 {
     protected static PDO $db;
 
