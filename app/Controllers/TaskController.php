@@ -15,10 +15,12 @@ class TaskController extends Controller
         $task = new Task();
         $tasks = $task->getPaginated($sortBy, $orderBy, $page, $perPage);
         $total = $task->getTotalCount();
+
         if (isset($_SESSION['success_message'])) {
             $successMessage = $_SESSION['success_message'];
             unset($_SESSION['success_message']);
         }
+
         echo $this->twig->render('tasks/index.html.twig', [
             'tasks' => $tasks,
             'page' => $page,

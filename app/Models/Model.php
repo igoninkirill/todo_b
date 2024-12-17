@@ -13,7 +13,7 @@ abstract class Model
         $this->init();
     }
 
-    public function init(): void
+    protected function init(): void
     {
         $host = $_ENV['DB_HOST'] ?? 'pgsql';
         $port = $_ENV['DB_PORT'] ?? '5432';
